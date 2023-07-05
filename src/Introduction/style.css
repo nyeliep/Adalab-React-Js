@@ -1,0 +1,124 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  height: 100vh;
+  width: 100w;
+}
+.heading{
+  color: red;
+}
+h1{
+  font-size: 36px;
+  text-align: center;
+  color: goldenrod;
+  margin-left: 5%;
+  padding-right: 30%;
+}
+p{
+  color: #fff;
+  line-height: 30px;
+  margin-left: 5%;
+  padding-right: 30%;
+}
+.container {
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+.image-grid {
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  
+}
+.image-grid img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.grid-item {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/*styling navbar  */
+.navbar{
+  top: 0;
+  margin: 0 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar .contain{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.navbar .logo h1{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo h1 span{
+  color: goldenrod;
+  transition: all 0.3s ease;
+}
+.navbar .nav li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .nav li a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .nav li a:hover{
+  color: goldenrod;
+}
+.navbar.sticky .nav li a:hover{
+color: #fff;
+}
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.homeImg{
+  margin-top: 10%;
+ 
+}
+.homeImg img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.homeImg1{
+  position: absolute;
+}
